@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: prod
+
+cloud:
+  aws:
+    credentials:
+      accessKey:
+      secretKey:
+    s3:
+      bucket:
+    region:
+      static:
+    stack:
+      auto: false
+
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
